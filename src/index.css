@@ -1,0 +1,123 @@
+@import 'tailwindcss';
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+@theme {
+  --breakpoint-sm: 590px;
+
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  --color-grey-950: #08070b;
+  --color-grey-900: #14131b;
+  --color-grey-850: #18171f;
+  --color-grey-800: #24232c;
+  --color-grey-700: #54535b;
+  --color-grey-600: #817d92;
+  --color-grey-200: #e6e5ea;
+
+  --color-green-200: #a4ffaf;
+  --color-yellow-300: #f8cd65;
+  --color-orange-400: #fb7c58;
+  --color-red-400: #f64a4a;
+
+  --color-gradient-1: linear-gradient(90deg, #14131b 0%, #08070b 100%);
+
+  --font-primary: 'JetBrains Mono', monospace;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #08070b;
+}
+
+input[type='range'] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+  height: 8px;
+  background: #18171f;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 28px;
+  width: 28px;
+  background-color: #e6e5ea;
+  border-radius: 50%;
+  border: none;
+}
+
+input[type='range']::-webkit-slider-thumb:hover {
+  background-color: #18171f;
+  border: 2px solid #a4ffaf;
+}
+
+input[type='range']::-moz-range-thumb {
+  height: 28px;
+  width: 28px;
+  background-color: #e6e5ea;
+  border-radius: 50%;
+  border: none;
+}
+
+input[type='range']::-moz-range-thumb:hover {
+  background-color: #18171f;
+  border: 2px solid #a4ffaf;
+}
+
+.copy-icon {
+  display: block;
+  width: 21px;
+  height: 24px;
+  background: #a4ffaf;
+  mask-size: cover;
+  mask: url(./assets/images/icon-copy.svg) no-repeat;
+}
+
+@media (max-width: 590px) {
+  .copy-icon {
+    height: 20px;
+    width: 17.5px;
+    mask-size: contain;
+  }
+}
+
+.copy-icon:hover {
+  background: white;
+}
+
+.check-container {
+  position: relative;
+  cursor: pointer;
+}
+
+.check-icon {
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: #18171f;
+  mask-size: cover;
+  mask: url(./assets/images/icon-check.svg);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.icon-hidden {
+  display: none;
+}
+
+.arrow-icon {
+  width: 11px;
+  height: 11px;
+  background: #24232c;
+  mask-size: cover;
+  mask: url(./assets/images/icon-arrow-right.svg);
+}
