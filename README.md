@@ -68,7 +68,7 @@ I also learned how to use these custom inputs to generate a password based on se
 
 ### Continued development
 
-I would like to continue imporoving. I also want to explore more advanced CSS techniques for styling and layout, and to find a way to make the code more modular and reusable.
+I would like to continue improving. I also want to explore more advanced CSS techniques for styling and layout, and to find a way to make the code more modular and reusable.
 
 Also, I would like to improve my code in the future so it is more clean and simple.
 
