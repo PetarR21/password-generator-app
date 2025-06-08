@@ -227,6 +227,7 @@ const PasswordGenerator = () => {
             COPIED
           </div>
           <button
+            type='button'
             className={`${password ? 'cursor-pointer' : 'cursor-not-allowed'}
            
             `}
@@ -250,7 +251,9 @@ const PasswordGenerator = () => {
           </div>
         </div>
         <div className='mt-4'>
+          <label htmlFor='range' className='hidden'></label>
           <input
+            id='range'
             type='range'
             min='0'
             max='18'
@@ -299,6 +302,7 @@ const PasswordGenerator = () => {
           <PasswordStrength password={password} symbolsArray={symbolsArray} />
         </div>
         <button
+          type='button'
           onClick={generatePassword}
           onMouseEnter={generateMouseEnter}
           onMouseLeave={generateMouseLeave}

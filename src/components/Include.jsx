@@ -19,7 +19,9 @@ const Include = ({
           }
         }}
       >
+        <label htmlFor={label} className='hidden'></label>
         <input
+          id={label}
           className='relative block appearance-none w-[20px] h-[20px] border-2 border-grey-200 border-solid self-center  bg-transparent ../assets/images/icon-check.svg checked:bg-green-200 checked:border-0  bg-transparent cursor-pointer hover:border-green-200'
           type='checkbox'
           checked={checked}
@@ -27,9 +29,9 @@ const Include = ({
         />
         <div className={`check-icon ${checked ? '' : 'icon-hidden'}`}></div>
       </div>
-      <label className='text-[18px]/[24px] text-grey-200 max-sm:text-[16px]/[20px]'>
+      <div className='text-[18px]/[24px] text-grey-200 max-sm:text-[16px]/[20px]'>
         {label}
-      </label>
+      </div>
     </div>
   )
 }
